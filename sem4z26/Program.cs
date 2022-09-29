@@ -26,22 +26,43 @@
     //}
 //}
 
-Console.Clear();
-Console.Write("Введите число: ");
-int x = int.Parse(Console.ReadLine());
+// Решение 2 (для 10-ти и более значных чисел не работает)
+//Console.Clear();
+//Console.Write("Введите число: ");
+//int x = int.Parse(Console.ReadLine());
 
-int Numbers (int x) 
-{
-    int result = 0;
-    if (x == 0) result = 1;
-    for (int i = 1; i < x; i++) 
+//int Numbers (int x) 
+//{
+    //int result = 0;
+    //if (x == 0) result = 1;
+    //for (int i = 1; i < x; i++) 
+    //{
+        //if (x % i >= 0) 
+        //{
+            //result += 1;
+            //i = i * 10;
+        //}
+    //}
+    //return result;
+//}
+//Console.WriteLine($"В веденном числе {Numbers(x)} цифр(а)");
+
+// Решение 3 (работает полностью)
+//Console.Clear();
+//Console.WriteLine("Введите число:");
+//string number = Console.ReadLine();
+//int limit = number.Length;
+//Console.WriteLine($"Количество цифр в числе: {limit}");
+
+
+// Решение 4 (работает полностью)
+using System;
+internal class Program
+  {
+    private static void Main(string[] args)
     {
-        if (x % i >= 0) 
-        {
-            result += 1;
-            i = i * 10;
-        }
+      Console.WriteLine("Введите число: ");
+      string num = (Console.ReadLine());
+      Console.WriteLine(num.Length);
     }
-    return result;
 }
-Console.WriteLine($"В веденном числе {Numbers(x)} цифр(а)");
