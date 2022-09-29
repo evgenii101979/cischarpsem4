@@ -3,6 +3,8 @@
 //2,4 -> 24
 //1,5 -> 120
 
+// не считате с минусами
+
 Console.Clear();
 Console.WriteLine("Введите число 1:");
 int M = int.Parse(Console.ReadLine());
